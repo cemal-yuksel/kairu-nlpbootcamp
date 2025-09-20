@@ -6,14 +6,15 @@ Amaç, katılımcılara **NLP’nin temel kavramlarını** tanıtmak, **metin ö
 ---
 
 ## 🎯 Öğrenme Hedefleri
-- NLP’nin temel kavramlarını anlamak  
+- NLP’nin temel kavramlarını kavramak  
 - Tokenization ve metin ön işleme adımlarını uygulamak  
-- POS etiketlerini (NN, VB, JJ, PRP vb.) tanımak ve yorumlamak  
-- İlk veri seti üzerinde basit bir NLP pipeline geliştirmek  
+- POS etiketlerini tanımak ve çıktıları yorumlamak  
+- Temel bir NLP pipeline’ı kurmak ve analiz etmek  
 
 ---
 
 ## 📂 İçerikler
+- `Case Study I.ipynb` → İlk uygulamalı case study (veri okuma, ön işleme, tokenization, POS tagging, görselleştirme)  
 - `I. Hafta Ders Notları.ipynb` → Teorik ders notları ve temel örnekler  
 - `train.csv` → Çalışmalarda kullanılan örnek veri seti  
 - `POS.docx` → POS etiketleri tablosu (İngilizce kısaltmalar, Türkçe karşılıklar, örnekler)  
@@ -36,7 +37,7 @@ Amaç, katılımcılara **NLP’nin temel kavramlarını** tanıtmak, **metin ö
   - Etiketleme çıktılarının yorumlanması  
 
 - **Uygulamalı Çalışma (Case Study)**  
-  - `train.csv` veri seti üzerinde ön işleme  
+  - Dr. Emily Watson'ın 3 Ocak 2023 tarihinde Paris'te düzenlenen Uluslararası Yapay Zeka Konferansı'ndaki konuşmasından bir kesit üzerinde veri ön işleme  
   - Basit POS analizi  
   - Çıktıların görselleştirilmesi  
 
@@ -53,16 +54,9 @@ Amaç, katılımcılara **NLP’nin temel kavramlarını** tanıtmak, **metin ö
 ## 📊 Beklenen Çıktılar
 - Temel tokenization çıktıları (örnek cümlelerin parçalanması)  
 - POS etiketli örnek cümleler  
-- CSV dosyası üzerinde temel NLP pipeline’ın tamamlanması  
-- Öğrenilen kavramların sonraki haftalara temel oluşturması  
-
----
-
-## 📖 Ek Kaynaklar
-- Jurafsky, D., & Martin, J. H. (2023). *Speech and Language Processing* (3rd ed.).  
-- Manning, C., Raghavan, P., & Schütze, H. (2008). *Introduction to Information Retrieval*.  
-- Bird, S., Klein, E., & Loper, E. (2009). *Natural Language Processing with Python*.  
-
+- Bir metin üzerinde temel NLP pipeline’ın tamamlanması  
+- Öğrenilen kavramların sonraki haftalara temel oluşturması
+  
 ---
 
 📌 Bu klasör, sonraki haftalarda ele alınacak **word embeddings, transformer tabanlı temsiller, duygu analizi ve chatbot geliştirme** gibi ileri konulara geçiş için temel bir basamak niteliğindedir.
