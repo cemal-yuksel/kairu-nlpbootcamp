@@ -17,7 +17,6 @@ Her hafta için ayrı klasörler (`hafta_1/`, `hafta_2/` …) oluşturulmuş olu
 - NLP’nin temel kavramları  
 - Tokenization ve text preprocessing  
 - Part-of-Speech (POS) etiketleme ve uygulamalar  
-- İlk uygulamalı Case Study  
 
 **Pratik Projeler:**  
 - `train.csv` veri seti ile temel NLP pipeline  
