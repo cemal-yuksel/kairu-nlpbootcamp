@@ -1,121 +1,76 @@
-# 🚀 NLP Bootcamp - Kairu
+<div align="center">
 
-Bu repo, **Kairu NLP Bootcamp** programına katılımım süresince gerçekleştirdiğim haftalık çalışmalarımı, ders notlarımı ve uygulamaları içermektedir.  
-Program, 5 haftalık yoğun bir içerik sunarak katılımcılara hem **kuramsal altyapı** hem de **uygulamalı beceriler** kazandırmayı hedeflemektedir.  
+# 🚀 Kairu NLP Bootcamp: Kuramdan Uygulamaya Derinlemesine Doğal Dil İşleme
 
-Bir akademisyen olarak bu süreçteki amacım, yalnızca teknik araçları öğrenmek değil; aynı zamanda kuramsal bilgileri uygulamalarla bütünleştirerek **araştırma standartlarına uygun, yansıtıcı bir öğrenme kaydı** oluşturmaktır.  
+Bu repo, **Kairu NLP Bootcamp** programı süresince geliştirilen algoritmaların, deneysel çalışmaların ve üretim odaklı NLP pipeline'larının teknik bir dökümantasyonudur.
 
-Her hafta için ayrı klasörler (`hafta_1/`, `hafta_2/` …) oluşturulmuş olup, bu klasörlerde **notebook’lar, veri setleri, ek dokümanlar ve README açıklamaları** yer almaktadır.  
+</div>
 
----
+<div align="center">
 
-## 📚 Program Akışı – 5 Modül
+[![Python](https://img.shields.io/badge/Python-3.9+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Ecosystem-FFD21E?style=for-the-badge)](https://huggingface.co/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://pytorch.org/)
+[![spaCy](https://img.shields.io/badge/spaCy-Pipeline-09A3D5?style=for-the-badge&logo=spaCy&logoColor=white)](https://spacy.io/)
+[![Gensim](https://img.shields.io/badge/Gensim-Topic%20Modeling-brightgreen?style=for-the-badge)](https://radimrehurek.com/gensim/)
+[![Jupyter](https://img.shields.io/badge/JupyterLab-Environment-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)](https://jupyter.org/)
 
-### Modül 1: NLP Temelleri ve POS Analizi  
-⏳ Süre: 1 Hafta  
-**Konular:**  
-- NLP’nin temel kavramları  
-- Tokenization ve text preprocessing  
-- Part-of-Speech (POS) etiketleme ve uygulamalar  
+</div>
 
-**Pratik Projeler:**  
-- `train.csv` veri seti ile temel NLP pipeline  
-- POS etiketleri (NN, VB, JJ vb.) üzerinden örnek çalışmalar  
+> **Projenin Felsefesi:** Bu çalışma, Doğal Dil İşleme alanındaki teorik temelleri (örn: **Dağıtımsal Anlambilim Hipotezi**) modern mimarilerle (örn: **Transformer**) birleştiren, **tekrarlanabilir (reproducible) ve yansıtıcı bir araştırma-geliştirme günlüğü** olarak tasarlanmıştır. Her bir modül, bir NLP probleminin CRISP-DM metodolojisine benzer adımlarla (veri anlama, hazırlama, modelleme, değerlendirme) ele alınmasını hedefler.
 
 ---
 
-### Modül 2: Word Embeddings (Word2Vec & GloVe)  
-⏳ Süre: 1 Hafta  
-**Konular:**  
-- Word2Vec algoritması (CBOW & Skip-Gram)  
-- GloVe pre-trained embedding’ler  
-- Türkçe & İngilizce veri setleriyle uygulamalar  
-- Vektör uzayında benzerlik ölçümleri  
+## 📚 Modül Detayları ve Teknik Derinlik
 
-**Pratik Projeler:**  
-- IMDB dataset ile sentiment analizi  
-- Hürriyet haber metinleri ile Türkçe embedding denemeleri  
-- `glove.6B.100d.txt` kullanımı  
+Her hafta, belirli bir yetkinlik setini hedefleyen bağımsız bir modül olarak tasarlanmıştır.
 
----
-
-### Modül 3: FastText & Transformer Tabanlı Temsiller  
-⏳ Süre: 1 Hafta  
-**Konular:**  
-- FastText modeli ve subword temsili  
-- Transformer tabanlı embedding yöntemleri (BERT, DistilBERT vb.)  
-- Metin sınıflandırma pipeline’ları  
-
-**Pratik Projeler:**  
-- E-commerce dataset üzerinde ürün yorumu sınıflandırması  
-- Spam veri seti (ham/spam) üzerinden metin sınıflandırma  
-- Transformer embedding karşılaştırmaları  
+| Modül & Odak Alanı | 🧠 Kuramsal Altyapı | 💻 Uygulamalı Yetkinlikler & Projeler | 🗂️ Haftalık Dosyalar & Kaynaklar |
+| :--- | :--- | :--- | :--- |
+| **Hafta 1:** <br/> *NLP Pipeline Mimarisi ve Leksik Analiz* | 🏗️ **Yapısal Olmayan Veri:** Metnin makine öğrenmesi için işlenmesi.<br/>🧹 **Tokenization & Normalizasyon:** `Stemming` vs. `Lemmatization`.<br/>🇹🇷 **Morfolojik Analiz:** Türkçe'nin eklemeli yapısı.<br/>📊 **N-gram & BoW:** Temel `feature extraction` teknikleri. | ⚙️ **Preprocessing Pipeline:** Ham metni `scikit-learn` uyumlu formata dönüştüren uçtan uca pipeline inşası.<br/>🏷️ **POS Etiketleme:** Metindeki isim, fiil, sıfat yoğunlukları gibi anlamsal metrikleri çıkarma.<br/>📈 **İstatistiksel Analiz:** Temel metin istatistikleri üretme. | - 📓 **`Case Study I.ipynb`**: Veri okuma, ön işleme, POS tagging ve görselleştirmeyi içeren ilk vaka analizi.<br/>- 🧠 **`I. Hafta Ders Notları.ipynb`**: Teorik ders notları ve temel kod örnekleri.<br/>- 💾 **`train.csv`**: Uygulamalarda kullanılan örnek veri seti.<br/>- 📑 **`POS.docx`**: POS etiketleri ve Türkçe karşılıklarını içeren referans dokümanı. |
+| **Hafta 2:** <br/> *Dağıtımsal Anlambilim ve Yoğun Vektör Temsilleri* | 🔗 **Dağıtımsal Hipotez:** Kelimelerin anlamını bağlamdan çıkarma.<br/>🗺️ **Vektör Uzay Modelleri:** `Word2Vec` (CBOW/Skip-Gram).<br/>⚙️ **Optimizasyon:** `Negative Sampling` & `Hierarchical Softmax`.<br/>🤝 **GloVe Mimarisi:** `Co-occurrence` matrisine dayalı mantık. | 🎓 **Model Eğitimi:** `Gensim` ile Türkçe korpus üzerinden özel `Word2Vec` modeli eğitme.<br/>🌐 **Transfer Learning:** Önceden eğitilmiş `GloVe` embedding'lerini projeye entegre etme.<br/>📐 **Vektör Aritmetiği:** Anlamsal ilişkileri (`Kral - Erkek + Kadın`) test etme.<br/>🎨 **Görselleştirme:** `t-SNE` ile kelime kümelerini keşfetme. | - 🧠 **`01.Text Representations.ipynb`**: *Teorik Temeller* - BoW ve TF-IDF'in matematiksel altyapısı.<br/>- 💻 **`02-Word2vec and GloVe.ipynb`**: *Derinlemesine Uygulama* - `Gensim` ile model eğitimi ve GloVe analizi.<br/>- 🧪 **`03 - Case 2 Solution.ipynb`**: *Sentez ve Analiz* - Farklı temsil stratejilerini karşılaştıran vaka analizi.<br/>- 💾 **`IMDB Dataset.csv`**: Vaka çalışması için film yorumları.<br/>- 📄 **`hurriyet.txt`**: Özel model eğitimi için Türkçe metin korpusu.<br/>- 🌐 **`glove.6B.100d.txt`**: Endüstri standardı, önceden eğitilmiş GloVe vektörleri. |
+| **Hafta 3:** <br/> *Subword Modelleri ve Transformer Mimarisi* | 🧩 **Subword Tokenizasyonu:** `OOV` problemine `BPE` ve `WordPiece` ile çözüm.<br/>✨ **FastText:** Karakter `n-gram`'ları ile morfolojik zenginliği yakalama.<br/>⚡ **Attention Mekanizması:** Transformer'ların ardındaki temel sezgi.<br/>🤖 **Encoder-Decoder Mimarisi:** `Self-Attention` temelli modern yapı. | 🔄 **Bağlamsal Temsiller:** `Hugging Face` ile `BERT` ve `DistilBERT`'ten `contextualized embedding`'ler elde etme.<br/>⚖️ **Karşılaştırmalı Analiz:** `FastText` ve `BERT` embedding'lerinin sınıflandırma performansını karşılaştırarak bağlamsal temsillerin gücünü analiz etme. | - 📓 **`01_subword_models.ipynb`**: FastText ve BPE tokenizasyonunun incelenmesi.<br/>- 🤖 **`02_intro_to_transformers.ipynb`**: BERT'ten embedding çıkarma ve analiz.<br/>- 💾 **`data/e-commerce_reviews.csv`**: Vaka analizi için ürün yorumları veri seti. |
+| **Hafta 4:** <br/> *Metin Sınıflandırma ve Model Değerlendirme* | 📈 **Olasılıksal Modeller:** `Naive Bayes` ve `Bayes Teoremi`.<br/>🧠 **Ardışıl Mimariler:** `RNN`, `LSTM` & `GRU` hücre yapıları.<br/>📉 **Gradient Problemleri:** `Vanishing/Exploding Gradient` sorunu.<br/>🎯 **Değerlendirme Metrikleri:** `Precision`, `Recall`, `F1-Score`, `Confusion Matrix` ve `ROC-AUC`. | 📊 **Kıyaslamalı Modelleme:** `Naive Bayes`, `Bi-LSTM` ve `DistilBERT` ile duygu analizi `classifier`'ları geliştirme.<br/>📝 **Performans Raporlama:** Modelleri `F1-Score` ve `Confusion Matrix` üzerinden analiz ederek her birinin avantaj/dezavantajlarını teknik bir rapor halinde sunma. | - 💻 **`01_classification_baselines.ipynb`**: Naive Bayes ve Logistic Regression uygulamaları.<br/>- 🧠 **`02_deep_learning_classifiers.ipynb`**: Bi-LSTM ve DistilBERT ile model eğitimi.<br/>- 💾 **`data/sentiment_train_test.csv`**: Duygu analizi için tren ve test veri setleri. |
+| **Hafta 5:** <br/> *Üretken Modeller ve İleri Düzey Uygulamalar* | 💡 **Transfer Learning:** `Fine-tuning` paradigmaları.<br/>❓ **Soru-Cevap (QA):** `Extractive` vs. `Abstractive` yaklaşımlar.<br/>✍️ **Özetleme (Summarization):** Metin özetleme teknikleri.<br/>🔄 **T5 Mimarisi:** Her NLP görevini `Text-to-Text` problemine dönüştürme felsefesi. | 🗣️ **QA Sistemi:** `Hugging Face pipeline` API'si ile `Extractive QA` sistemi kurma.<br/>📜 **Özetleyici Pipeline:** `T5` veya `BART` modelini `fine-tune` ederek uzun metinlerden `abstractive` özetler üreten bir sistem geliştirme.<br/>💬 **Chatbot Prototipi:** Transformer tabanlı temel bir diyalog sistemi tasarlama. | - ❓ **`01_extractive_qa_with_bert.ipynb`**: BERT tabanlı soru-cevap uygulaması.<br/>- ✍️ **`02_summarization_with_t5.ipynb`**: T5 ile metin özetleme pipeline'ı.<br/>- 💬 **`03_chatbot_prototype.ipynb`**: Temel chatbot geliştirme not defteri. |
 
 ---
 
-### Modül 4: Duygu Analizi ve Model Karşılaştırmaları  
-⏳ Süre: 1 Hafta  
-**Konular:**  
-- Sentiment Analysis (Pozitif/Negatif sınıflandırma)  
-- Naive Bayes ile text classification  
-- Derin öğrenme tabanlı sınıflandırma modelleri  
-- Performans kıyaslamaları  
+## 📂 Sistematik Repo Yapısı
 
-**Pratik Projeler:**  
-- `train.csv` ve `test.csv` ile duygu analizi  
-- NB vs. Deep Learning karşılaştırmalı deneyler  
+Projenin tekrarlanabilirliğini ve modülerliğini sağlamak amacıyla aşağıdaki detaylı dizin yapısı benimsenmiştir:
 
----
-
-### Modül 5: QA, Özetleme ve Chatbot Geliştirme  
-⏳ Süre: 1 Hafta  
-**Konular:**  
-- Transformer tabanlı Soru-Cevap (QA) sistemleri  
-- BERT & T5 ile metin özetleme  
-- Hugging Face Transformers framework kullanımı  
-- Chatbot tasarımı ve geliştirme  
-
-**Pratik Projeler:**  
-- BERT tabanlı QA sistemi  
-- T5 ile özetleme pipeline’ı  
-- Transformer tabanlı chatbot uygulaması  
-- Haftalık ödev: Çok adımlı NLP pipeline geliştirme  
-
----
-
-## 🎯 Program Hedefleri  
-
-Bu bootcamp sonunda katılımcılar:  
-✅ NLP temel kavramlarını uygulamalı şekilde öğrenmiş olacak  
-✅ Word embeddings ve modern temsil yöntemlerini kullanabilecek  
-✅ Sentiment analysis ve text classification modelleri geliştirebilecek  
-✅ Transformer tabanlı QA, özetleme ve chatbot uygulamaları kurabilecek  
-✅ Gerçek veri setleriyle uçtan uca NLP projeleri tasarlayabilecektir.  
-
----
-
-## 🛠️ Teknoloji Yığını  
-
-### Temel Teknolojiler  
-- **Python** – Ana programlama dili  
-- **Jupyter Notebook** – Deneysel geliştirme ortamı  
-- **scikit-learn, pandas, numpy** – Makine öğrenmesi & veri işleme  
-- **NLTK, spaCy** – NLP ön işleme araçları  
-- **Gensim** – Word2Vec & FastText  
-- **Hugging Face Transformers** – Modern NLP modelleri  
-
-### Veri Setleri  
-- **IMDB Dataset** – İngilizce film yorumları  
-- **Hurriyet.txt** – Türkçe haber metinleri  
-- **Spam Dataset** – SMS spam/ham verisi  
-- **E-commerce Dataset** – E-ticaret yorumları  
-- **Custom train/test sets** – Duygu analizi için  
-
-### Ortam ve Dağıtım  
-- **Google Colab** – Çalıştırma ortamı  
-- **GitHub** – Sürüm kontrol ve paylaşım  
-- **Streamlit** – Prototipleme (opsiyonel)  
-
----
-
-📌 Her haftanın kendi klasöründe ayrıntılı açıklamalar ve README dosyaları bulunmaktadır.  
+```bash
+kairu-nlp-bootcamp/
+├── hafta_1/
+│   ├── Case Study I.ipynb              # Vaka analizi 1
+│   ├── I. Hafta Ders Notları.ipynb     # Teorik notlar
+│   ├── train.csv                       # Veri seti
+│   └── POS.docx                        # POS etiketleri referansı
+│
+├── hafta_2/
+│   ├── 01.Text Representations.ipynb   # BoW ve TF-IDF
+│   ├── 02-Word2vec and GloVe.ipynb     # Word2Vec ve GloVe uygulaması
+│   ├── 03 - Case 2 Solution.ipynb      # Vaka analizi 2
+│   ├── IMDB Dataset.csv                # Film yorumları verisi
+│   ├── hurriyet.txt                    # Türkçe metin korpusu
+│   └── glove.6B.100d.txt               # Önceden eğitilmiş GloVe vektörleri
+│
+├── hafta_3/
+│   ├── 01_subword_models.ipynb
+│   └── data/
+│       └── e-commerce_reviews.csv
+│
+├── hafta_4/
+│   ├── 01_classification_baselines.ipynb
+│   ├── 02_deep_learning_classifiers.ipynb
+│   └── data/
+│       └── sentiment_train_test.csv
+│
+├── hafta_5/
+│   ├── 01_extractive_qa_with_bert.ipynb
+│   ├── 02_summarization_with_t5.ipynb
+│   └── 03_chatbot_prototype.ipynb
+│
+├── requirements.txt                    # Gerekli kütüphaneler ve versiyonları
+└── README.md                           # Bu ana döküman
+```
