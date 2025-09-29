@@ -1,62 +1,81 @@
-# 📘 Hafta 1 – NLP Temelleri ve POS Analizi
+<div align="center">
 
-Bu klasör, **Kairu NLP Bootcamp** programının ilk haftasına ait ders notlarını, uygulamalı çalışmalarını ve ek kaynaklarını içerir.  
-Amaç, katılımcılara **NLP’nin temel kavramlarını** tanıtmak, **metin ön işleme süreçlerini** uygulamalı olarak göstermek ve **Part-of-Speech (POS) etiketleme** ile ilk dilbilimsel analiz deneyimlerini kazandırmaktır.
+# 📘 Hafta 1: NLP Pipeline Mimarisi ve Leksik Analiz
 
----
+**Kairu NLP Bootcamp | Modül 1**
 
-## 🎯 Öğrenme Hedefleri
-- NLP’nin temel kavramlarını kavramak  
-- Tokenization ve metin ön işleme adımlarını uygulamak  
-- POS etiketlerini tanımak ve çıktıları yorumlamak  
-- Temel bir NLP pipeline’ı kurmak ve analiz etmek  
+</div>
+
+> **Misyon:** Bu ilk modül, Doğal Dil İşleme'nin temel yapı taşlarını anlamak, yapısal olmayan metin verisini makine öğrenmesi modelleri için anlamlı ve işlenebilir bir formata dönüştürme pratiği kazanmak ve Part-of-Speech (POS) etiketleme ile ilk dilbilimsel analiz deneyimini gerçekleştirmek üzere tasarlanmıştır.
 
 ---
 
-## 📂 İçerikler
-- `Case Study I.ipynb` → İlk uygulamalı case study (veri okuma, ön işleme, tokenization, POS tagging, görselleştirme)  
-- `I. Hafta Ders Notları.ipynb` → Teorik ders notları ve temel örnekler  
-- `train.csv` → Çalışmalarda kullanılan örnek veri seti  
-- `POS.docx` → POS etiketleri tablosu (İngilizce kısaltmalar, Türkçe karşılıklar, örnekler)  
+### 🎯 Haftanın Hedefleri
+
+Bu modülün sonunda aşağıdaki yetkinliklerin kazanılması hedeflenmektedir:
+
+-   ✅ **NLP Temellerine Hakim Olma:** Alanın temel kavramlarını, terminolojisini ve uygulama alanlarını anlama.
+-   ✅ **Metin Ön İşleme Pipeline'ı Implemente Etme:** `Tokenization`, `stopword` temizliği, `lemmatization` gibi adımları içeren bir veri ön işleme akışı kurabilme.
+-   ✅ **POS Etiketlerini Yorumlama:** Part-of-Speech etiketlerinin ne anlama geldiğini bilme ve bir metin üzerindeki dağılımlarından temel çıkarımlar yapabilme.
+-   ✅ **Uçtan Uca Analiz Yeteneği:** Verilen bir metni alıp, temizleyip, analiz edip temel bulguları raporlayabilme.
 
 ---
 
-## 🔬 Konular
-- **Doğal Dil İşleme’ye Giriş**  
-  - NLP’nin kapsamı ve kullanım alanları  
-  - Python kütüphaneleri: `nltk`, `spacy`, `pandas`  
+### 🛠️ Teknoloji ve Kütüphaneler
 
-- **Tokenization & Text Preprocessing**  
-  - Kelime ve cümle düzeyinde tokenization  
-  - Noktalama işaretleri ve stopword temizliği  
-  - Lemmatization ve stemming  
+Bu hafta kullanılan temel araçlar ve kütüphaneler:
 
-- **Part-of-Speech (POS) Tagging**  
-  - POS etiketlerinin dilbilimsel önemi  
-  - İngilizce POS etiketleri ve Türkçe karşılıkları  
-  - Etiketleme çıktılarının yorumlanması  
+<div align="center">
 
-- **Uygulamalı Çalışma (Case Study)**  
-  - Dr. Emily Watson'ın 3 Ocak 2023 tarihinde Paris'te düzenlenen Uluslararası Yapay Zeka Konferansı'ndaki konuşmasından bir kesit üzerinde veri ön işleme  
-  - Basit POS analizi  
-  - Çıktıların görselleştirilmesi  
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)](https://jupyter.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-1.5+-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![NLTK](https://img.shields.io/badge/NLTK-3.8+-00AAEF?style=for-the-badge&logo=nltk&logoColor=white)](https://www.nltk.org/)
+[![spaCy](https://img.shields.io/badge/spaCy-3.5+-09A3D5?style=for-the-badge&logo=spaCy&logoColor=white)](https://spacy.io/)
+
+</div>
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
-- **Python 3.11+**  
-- **Jupyter Notebook**  
-- **pandas, numpy** → Veri işleme  
-- **nltk, spacy** → NLP ön işleme & POS tagging  
+### 📂 Haftanın İçerikleri
+
+Modül boyunca kullanılacak tüm materyaller aşağıda listelenmiştir.
+
+| Dosya Türü | Dosya Adı | Açıklama |
+| :--- | :--- | :--- |
+| 📓 **Jupyter Notebook** | `Case Study I.ipynb` | Veri okuma, ön işleme, tokenizasyon, POS tagging ve görselleştirmeyi içeren uygulamalı vaka analizi. |
+| 🧠 **Jupyter Notebook** | `I. Hafta Ders Notları.ipynb` | Haftanın teorik konularını, temel kavramları ve kütüphane kullanımlarını içeren ders notları. |
+| 💾 **Veri Seti** | `train.csv` | Vaka analizinde ve pratik uygulamalarda kullanılan örnek metin verilerini içeren CSV dosyası. |
+| 📑 **Referans Dokümanı** | `POS.docx` | İngilizce POS etiketleri, Türkçe karşılıkları ve örneklerini içeren, analizleri yorumlamaya yardımcı tablo. |
 
 ---
 
-## 📊 Beklenen Çıktılar
-- Temel tokenization çıktıları (örnek cümlelerin parçalanması)  
-- POS etiketli örnek cümleler  
-- Bir metin üzerinde temel NLP pipeline’ın tamamlanması  
-- Öğrenilen kavramların sonraki haftalara temel oluşturması
-  
+### 🔬 Teknik Gündem ve İşlenen Konular
+
+| Alan | İşlenen Konular | Anahtar Kavramlar ve Teknikler |
+| :--- | :--- | :--- |
+| **🌐 NLP'ye Giriş** | • NLP'nin Tanımı ve Kapsamı<br/>• Endüstriyel Uygulama Alanları | `Computational Linguistics`, `Structured vs. Unstructured Data`, `Corpus`, `Lexicon` |
+| **⚙️ Metin Ön İşleme** | • Tokenization Yöntemleri<br/>• Veri Temizleme Stratejileri<br/>• Kök ve Gövde Bulma | `Word/Sentence Tokenization`, `Stopword Removal`, `Punctuation Handling`, `Lemmatization`, `Stemming` |
+| **🏷️ Part-of-Speech (POS) Tagging** | • POS Etiketlerinin Dilbilimsel Rolü<br/>• Etiketleme Modellerinin Çalışma Prensibi | `Lexical Categories`, `Penn Treebank Tagset`, `NN (Noun)`, `VB (Verb)`, `JJ (Adjective)`, `RB (Adverb)` |
+
 ---
 
-📌 Bu klasör, sonraki haftalarda ele alınacak **word embeddings, transformer tabanlı temsiller, duygu analizi ve chatbot geliştirme** gibi ileri konulara geçiş için temel bir basamak niteliğindedir.
+###  casework Vaka Analizi: Dr. Watson'ın Konuşması
+
+Bu haftaki ana uygulamamız, kurgusal bir senaryo üzerinden ilerlemektedir:
+
+-   **Senaryo:** Dr. Emily Watson'ın **3 Ocak 2023** tarihinde Paris'te düzenlenen Uluslararası Yapay Zeka Konferansı'ndaki konuşmasından bir kesit.
+-   **Amaç:** Bu konuşma metni üzerinde yukarıda öğrenilen tüm ön işleme adımlarını uygulamak, metni POS etiketleri ile zenginleştirmek ve metnin kelime türü dağılımı gibi temel istatistiklerini çıkararak görselleştirmek. Bu çalışma `Case Study I.ipynb` not defterinde detaylı olarak işlenmiştir.
+
+---
+
+### ✅ Kazanılan Yetkinlikler ve Somut Çıktılar
+
+-   **Pipeline Çıktısı:** Verilen ham metinden başlayarak, temizlenmiş ve token'larına ayrılmış bir veri yapısı elde edildi.
+-   **Analiz Çıktısı:** Metin içerisindeki her bir token, POS etiketiyle (`NN`, `VB`, `JJ` vb.) etiketlendi.
+-   **Raporlama:** Metindeki en sık kullanılan kelime türlerinin (örneğin, "konuşmanın %30'u isimlerden oluşmaktadır") bir frekans dağılımı oluşturuldu ve görselleştirildi.
+-   **Temel Oluşturma:** Bu hafta öğrenilen tüm kavram ve teknikler, sonraki haftaların karmaşık konuları için sağlam bir zemin hazırladı.
+
+---
+
+> 📌 **Sonraki Adımlar:** Bu modülde atılan temeller, bir sonraki hafta ele alınacak olan **Dağıtımsal Anlambilim (Distributional Semantics)** ve kelimelerin anlamsal olarak temsil edildiği **Word Embeddings** konularına geçiş için kritik bir öneme sahiptir.
