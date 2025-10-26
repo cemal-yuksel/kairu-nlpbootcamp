@@ -1,5 +1,3 @@
-# 03. Haftalık Vaka Çalışması (Weekly Case Study)
-
 ## 🚦 NLP Vaka Çalışması Yolculuğu
 
 <p align="center">
